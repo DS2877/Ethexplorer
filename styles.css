@@ -1,0 +1,93 @@
+/* Grundläggande styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 450px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 209, 178, 0.3);
+    border: 1px solid #00d1b2;
+}
+
+/* Rubriker */
+h1 {
+    font-size: 28px;
+    color: #00d1b2;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #00bfa5;
+    margin-top: 20px;
+}
+
+/* Input */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+input {
+    width: 80%;
+    max-width: 280px;
+    padding: 10px;
+    border: 2px solid #00d1b2;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #00bfa5;
+}
+
+/* Knappdesign */
+button {
+    background-color: #00d1b2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 5px rgba(0, 209, 178, 0.3);
+}
+
+button:hover {
+    background-color: #008f8c;
+    transform: scale(1.05);
+}
+
+/* Resultat-text */
+p {
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #cccccc;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Block Explorer</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Ethereum Block Explorer</h1>
+    
+    <label for="address">Ethereum-adress:</label>
+    <input type="text" id="address" placeholder="Skriv in en Ethereum-adress">
+    <button onclick="getBalance()">Hämta saldo</button>
+    <p id="balance"></p>
+
+    <h2>Skicka en transaktion</h2>
+    <label for="recipient">Mottagaradress:</label>
+    <input type="text" id="recipient" placeholder="Skriv mottagarens adress">
+    <label for="amount">Belopp i Ether:</label>
+    <input type="text" id="amount" placeholder="Skriv belopp">
+    <button onclick="sendTransaction()">Skicka</button>
+    <p id="transactionResult"></p>
+
+    <h2>Hämta antal block</h2>
+    <button onclick="getBlockNumber()">Hämta blocknummer</button>
+    <p id="blockNumber"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
