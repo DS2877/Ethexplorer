@@ -1,6 +1,5 @@
 // Anslut till Ethereum-nätverket
-// OBS OBS GLÖM INTE ATT SÄTTA IN INFURA PROJECT ID DÄR DET STÅR PLACEHOLDER
-const web3 = new Web3("https://sepolia.infura.io/v3/PLACEHOLDER");
+const web3 = new Web3("https://sepolia.infura.io/v3/12eb75def2b442a687cc09013376979b");
 
 // Hämta saldo för en Ethereum-adress
 async function getBalance() {
