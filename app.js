@@ -8,6 +8,7 @@ async function getBalance() {
         alert("Ogiltig Ethereum-adress!");
         return;
     }
+
     const balance = await web3.eth.getBalance(address);
     document.getElementById("balance").innerText = `Saldo: ${web3.utils.fromWei(balance, "ether")} ETH`;
 }
@@ -18,6 +19,7 @@ async function sendTransaction() {
         alert("MetaMask krävs för att skicka transaktioner!");
         return;
     }
+    
     const accounts = await ethereum.request({ method: "eth_requestAccounts" });
     const sender = accounts[0];
     const recipient = document.getElementById("recipient").value;
